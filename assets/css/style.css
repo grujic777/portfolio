@@ -31,14 +31,21 @@ ul {
     height: auto;
     padding: 20px;
     
-    /* clip-path: polygon(0 0, 100% 0%, 100% 70%, 50% 100%, 0 70%); */
-    background-image: url('../img/back12.jpg');
+
+    background-image: url('../img/back300.jpg');
 
     background-position: center;
     background-size: cover;
+
     background-attachment: fixed;
-    -webkit-background-size: cover; 
-    -webkit-background-attachment: fixed; 
+
+     -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden; 
+
   }
 
   #header {
@@ -612,5 +619,8 @@ font-family: 'Roboto Condensed', sans-serif;
     width: 50px;
   }
 
+  #profile img {
+    width: 200px;
+  }
 
 }
